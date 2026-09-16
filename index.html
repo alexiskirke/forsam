@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Sam</title>
+    <style>
+      :root {
+        --bg: #f7f6f3;
+        --fg: #1a1a18;
+        --accent: #c8643c;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #16161a;
+          --fg: #f2f1ee;
+          --accent: #e8825a;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 12vw, 6rem);
+        font-weight: 650;
+        letter-spacing: -0.03em;
+        text-align: center;
+      }
+
+      h1 span {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello <span>Sam</span></h1>
+  </body>
+</html>
